@@ -1,0 +1,22 @@
+{
+  "name": "impatient-js-book",
+  "version": "1.0.0",
+  "description": "Re-learning JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Depechejuan/re-learning-JS.git"
+  },
+  "author": "Juan Leon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Depechejuan/re-learning-JS/issues"
+  },
+  "homepage": "https://github.com/Depechejuan/re-learning-JS#readme",
+  "dependencies": {
+    "assert": "^2.1.0"
+  }
+}

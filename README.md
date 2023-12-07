@@ -8,8 +8,9 @@ And it was awesome! But I feel that I need much more to play a good role in the 
 
 In this repository, I will upload everything I learn from this book, as well as a review of old things I already knew.
 
-
-
 # Day One
+
 Pages 1 to ??
 History of JavaScript, updates from ECMAScript 2022, ECMAScript 2021 (...)
+Chapter 6 (Introduction to the most important JavaScript documentations)
+Chapter 7 (Syntax)

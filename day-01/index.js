@@ -36,3 +36,10 @@ const footballTeam = [
     },
 ];
 console.log(footballTeam.at(0)); // Recieve first object.
+
+/* 
+    It appears to have more news, but as far as I go, I am not understanding this at the moment, like "class" (public/private), since I never learn those features.
+    This type of features will be taken care on a later date when the book touches it
+*/
+
+/* New in ECMAScript 2021 */
