@@ -52,3 +52,38 @@ const text1 = "a";
 const text2 = "b";
 console.log(text1 + text2); // "ab"
 console.log("I see" + 3 + "monkeys"); // I see3monkeys
+
+// Comparation Operator
+/*
+    this is bigger > than this one
+    this is smaller < than this one
+    this is bigger or equal >= than this one
+    this is smaller or equal >= than this one
+    this is exactly === like this one
+    this is not like !== this one
+    "=" have more implications.
+    Books recommend always use "===" and not "==", witch has other implications
+*/
+
+console.log(3 < 4); // true
+console.log(3 <= 4); // true
+console.log(3 > 4); // false
+console.log(3 >= 4); // false
+console.log("abc" === "abc"); // true
+console.log("abc" !== "def"); // false
+
+// Declaring variables
+/* 
+    Const creates immutable variable bindings. It has to be initialized inmidately and it always be the same value.
+    Of course, it has to be declared with the value
+*/
+const x = 8; //
+// if you do x = 9 it would cause "TypeError"
+
+/* 
+    let creates mutable variable. It can be changed during code.
+*/
+let y;
+
+y = 3 * 5;
+let z = 3 * 5;

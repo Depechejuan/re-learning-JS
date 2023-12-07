@@ -10,7 +10,7 @@ In this repository, I will upload everything I learn from this book, as well as 
 
 # Day One
 
-Pages 1 to ??
+Pages 1 to 40
 History of JavaScript, updates from ECMAScript 2022, ECMAScript 2021 (...)
 Chapter 6 (Introduction to the most important JavaScript documentations)
 Chapter 7 (Syntax)
