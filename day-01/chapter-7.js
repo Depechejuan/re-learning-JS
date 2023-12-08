@@ -1,3 +1,4 @@
+const assert = require("assert");
 /* Syntax */
 
 /* 7.1.1 Basic constructs */
@@ -25,9 +26,19 @@ const string2 = "Me llamo Juan";
 const string3 = `Strings with inerpolated values: ${number1} and ${thisIs}`;
 
 // 7.1.1.3 Assertions
-// assert.equal(7 + 1, 8);
+assert.equal(7 + 1, 8);
+console.log(assert.equal(7 + 1, 8));
 // This isn't working, and it looks like is a library.
 // This compares if the operation and results are the same. Good use to compare functions or texts.
+
+// ADDED NEXT DAY: assert was imported and this is how it works:
+// if the condition is OK, it responses as "undefined", if not, it crash and give error.
+// use try/catch block to avoid crashing the app
+try {
+    console.log(assert.equal(7 + 7, 20));
+} catch (err) {
+    console.log("Assertion failed", err);
+}
 
 // 7.1.4 Logging to the Console
 

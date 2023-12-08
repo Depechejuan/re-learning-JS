@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Depechejuan/re-learning-JS#readme",
   "dependencies": {
-    "assert": "^2.1.0"
+    "assert": "^2.1.0",
+    "jest": "^29.7.0"
   }
 }

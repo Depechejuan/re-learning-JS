@@ -14,3 +14,9 @@ Pages 1 to 40
 History of JavaScript, updates from ECMAScript 2022, ECMAScript 2021 (...)
 Chapter 6 (Introduction to the most important JavaScript documentations)
 Chapter 7 (Syntax)
+Notes:
+The book mention a lot the method "assert", witch isn't a default function for JavaScript. I installed npm modules "assert" and "jest" to use it.
+
+# Day Two
+
+Chapter 7 (Syntax)
