@@ -21,4 +21,4 @@ The book mention a lot the method "assert", witch isn't a default function for J
 
 Chapter 7 (Syntax)
 Quiz: Basic:
-![Alt text](<Quiz - Basic.jpg>)
+![Alt text](<Quiz - Basic-1.jpg>)
