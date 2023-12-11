@@ -21,4 +21,12 @@ The book mention a lot the method "assert", witch isn't a default function for J
 
 Chapter 7 (Syntax)
 Quiz: Basic:
+
 ![Alt text](<Quiz - Basic-1.jpg>)
+
+Expressions vs Statements
+
+# Day Trhee
+
+Qiuz 7 (Syntax)
+Continue with Expressions vs Statements

@@ -216,3 +216,82 @@ class ValueWrapper {
 // At the end of a statement.
 
 // Time to make a Quiz! Result on the img file
+
+// 7.2 ADVANCED SYNTAX
+// 7.3  Identifier
+// 7.3.1 Valid Identifiers
+/*
+    First character:
+        • Unicode letter (including accented characters such as é and ü and characters from
+        non-latin alphabets, such as α)
+        • $
+        • _
+    Subsequent characters:
+        • Legal first characters
+        • Unicode digits (including Eastern Arabic numerals)
+        • Some other Unicode marks and punctuations
+    Examples:
+*/
+
+const ε = 0.0001;
+const строка = "";
+let _tmp = 0;
+const $foo2 = true;
+
+// 7.3.2 Reserved Words
+// mentioned above
+
+// 7.4 Statement vs. expression
+// Same syntax could deliver different thing depending of the use statement or expression
+
+// 7.4.1 Statements
+// A statement is a piece of code that can be executed and performs some kind of action. Example:
+let myBool;
+let myStr;
+if (myBool) {
+    myStr = "Yes";
+} else {
+    myStr = "No";
+}
+
+//or
+
+function twice(x) {
+    return x + x;
+}
+
+// 7.4.2 Expressions
+// an Expression is a piece of code that can be evaluated to produce a value.
+// For example, the code between the parentheses is an expression:
+
+let myStr2 = myBool ? "Yes" : "No";
+// The operator "? : "used between the parentheses is called "ternary operator". It is the expression version of the "if" statement
+// Let's look at more examples of expressions.
+console.log("ab" + "cd");
+console.log(Number("1234"));
+console.log(true || false);
+
+// 7.4.3 What is allowed where?
+// The body of a function MUST BE a sequence of statemens:
+function max(x, y) {
+    if (x > y) {
+        return x;
+    } else {
+        return y;
+    }
+}
+console.log(max(4, 5));
+
+// The arguments of a function call or method cal lmust be expressions:
+console.log("ab" + "cd", Number("123"));
+
+// However, expressions can be used as statements.
+// They are called "expression statements"
+// The opposite is not true: When the context requires an expression, you can't use a statement.
+
+// The following code demonstrates that any expressions bar() can be either expression or statement. Depends on the context:
+
+function f() {
+    console.log(bar()); // Bar is expression
+    bar(); // bar() is (expression) statement
+}
