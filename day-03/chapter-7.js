@@ -1,3 +1,6 @@
+"use strict";
+const assert = require("assert");
+
 // 7.5 Ambiguous Syntax
 // Same syntax could mean different interpretations depending if used in a statement or in expression.
 // 7.5.1 Same Syntax // Function declaration vs expression
@@ -85,7 +88,51 @@ while (processNextTime() > 0) {}
 
 // 7.7 Automatic Semicolon Insertions (ASI)
 /*
-    There is not so much to write here. Since I use "Prettier" extension on VSCode, it will automatically fill and correct the code.
+    There is not so much to write here. Since I use "Prettier" extension on VSCode, it will automatically fill and correct the code (I choose those settings).
     To see the examples properly, take a look on the Chapter 7.7 on the book
     https://exploringjs.com/impatient-js/ch_syntax.html#asi-triggered-unexpectedly
 */
+
+// 7.9 "Strict Mode" vs sloppy mode.
+// Sloppy stands for the regular mode. (default)
+// "use strict"  Strict mode is the default in modules and classes, and can be switched on in scripts (how is explained later). In this mode, several pitfalls of normal mode are removed and more exceptions are thrown.
+// Book asumes that you always have "strict mode" on.
+// In order to activate it, just writte on line 1 "use strict";
+// If you want to do it in only one block of code, you can do it like this:
+
+// function functioInStrictMode() {
+//     "use strict";
+// }
+
+// 7.9.2 "Improvements in Strict Mode"
+// Let's take a look of thinkgs that "Strict" does better than sloppy.
+
+/*
+function sloppyFunc() {
+    underclaredVar1 = 123;
+}
+sloppyFunc();
+try {
+    assert.equal(undeclaredVar1, 123);
+    console.log("Assertion SloppyFunc is Ok");
+} catch (err) {
+    console.log("Assertion Failed");
+}
+*/
+// This will trigger a "ReferenceError", because we didnt declare the variable.
+
+/*
+try {
+    function strictFunc() {
+        "use strict";
+        undeclaredVar2 = 123;
+    }
+    assert.throws(() => strictFunc(), {
+        name: "ReferenceError",
+        message: "undeclaredVar2 is not defined",
+    });
+} catch (err) {
+    console.log("Assertion Failed");
+}
+*/
+//The assert.throws() states that its first argument, a function, throws a ReferenceError when it is called.
