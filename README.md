@@ -36,3 +36,9 @@ From now on, Book advertice chapters beyond 7.2 as "Advanced"
 ![Alt text](<Captura de pantalla 2023-12-11 121145.png>)
 
 ![Alt text](<Captura de pantalla 2023-12-11 121306.png>)
+
+Chapter 8 (Using Console.\*)
+
+# Day Four
+
+Chapter 9 (Assertions)
