@@ -42,3 +42,6 @@ Chapter 8 (Using Console.\*)
 # Day Four
 
 Chapter 9 (Assertions)
+
+Creation of the repository "re-learningJS-exercises", in witch we are making all the quizz and test on the book
+Link: https://github.com/Depechejuan/re-learningJS-exercises
